@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6864111989621225787}
   - component: {fileID: 8294704056113274833}
   - component: {fileID: 277189938834989350}
-  - component: {fileID: 5274656506546173893}
+  - component: {fileID: 7994835831573627140}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -190,7 +190,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &5274656506546173893
+--- !u!114 &7994835831573627140
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -199,8 +199,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 6152510088419054331}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa96c3c56a1695a47a0ed4313bf2bfe0, type: 3}
+  m_Script: {fileID: 11500000, guid: 538d49d86bae2034aa69316856a847e8, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CharacterController
-  inputActions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
-  camera: {fileID: 0}
+  m_EditorClassIdentifier: Assembly-CSharp::OldInputController
+  speed: 5
+  jumpForce: 7

@@ -412,10 +412,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 396298b3cc11f9e409f88155c299919e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FractalGenerator
-  iterations: 6
+  iterations: 5
   childScale: 0.5
   rootColor: {r: 0, g: 0, b: 0, a: 1}
   deepColor: {r: 0, g: 1, b: 1, a: 1}
+  switchShapes: 1
+  updateInRealTime: 1
 --- !u!4 &996562960
 Transform:
   m_ObjectHideFlags: 0
