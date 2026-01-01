@@ -14,6 +14,10 @@ public class PlayerFollower : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        transform.position = new Vector3 (player.position.x + offset.x, player.position.y + offset.y, -10);
+        float x = (player.position.x + offset.x);
+        float y = player.position.y + offset.y;
+        x = Mathf.Clamp(x, 0, float.MaxValue);
+        y = Mathf.Clamp(y, 0.97f, 1.9f);
+        transform.position = new Vector3 (x,y , -10);
     }
 }

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5191938443183547194}
   - component: {fileID: 4498964124762045228}
   - component: {fileID: 4379879078971725510}
+  - component: {fileID: 5139500097398848526}
   m_Layer: 0
   m_Name: Coin
   m_TagString: Untagged
@@ -161,3 +162,15 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.64, y: 0.64}
   m_EdgeRadius: 0
+--- !u!114 &5139500097398848526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4124465452391364690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c473d262c47ff84ca291cae6e8f88f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Collectable
