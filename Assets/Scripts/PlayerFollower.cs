@@ -4,6 +4,8 @@ public class PlayerFollower : MonoBehaviour
 {
     [SerializeField] private Transform player;
     [SerializeField] private Vector3 offset = new Vector3(1, 2, -10);
+    [SerializeField] private Vector2 clamVals = new Vector2(0.97f, 1.9f);
+    [SerializeField] private float xClamp = 0;
 
     void Start()
     {
@@ -16,8 +18,8 @@ public class PlayerFollower : MonoBehaviour
     {
         float x = (player.position.x + offset.x);
         float y = player.position.y + offset.y;
-        x = Mathf.Clamp(x, 0, float.MaxValue);
-        y = Mathf.Clamp(y, 0.97f, 1.9f);
+        x = Mathf.Clamp(x, xClamp, float.MaxValue);
+        y = Mathf.Clamp(y, clamVals.x, clamVals.y);
         transform.position = new Vector3 (x,y , -10);
     }
 }

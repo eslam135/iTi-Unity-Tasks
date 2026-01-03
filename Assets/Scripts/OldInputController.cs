@@ -22,13 +22,11 @@ public class OldInputController : MonoBehaviour
     int collectedCoins = 0;
     int health = 10;
 
-    // Ground detection
     public Transform groundCheck;
     public float groundDistance = 0.2f;
     [SerializeField] public LayerMask groundMask;
     public bool isGrounded;
 
-    // Wall detection - same approach as ground detection
     public Transform leftWallCheck;
     public Transform rightWallCheck;
     public float wallCheckDistance = 0.2f;
