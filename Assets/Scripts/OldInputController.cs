@@ -70,7 +70,6 @@ public class OldInputController : MonoBehaviour
         if (isKnockedBack)
             return;
 
-        // If touching wall in air and trying to move into it, don't apply horizontal movement
         if (isTouchingWall && !isGrounded)
         {
             desiredVelocity = new Vector2(0, rb.linearVelocity.y);
@@ -92,11 +91,9 @@ public class OldInputController : MonoBehaviour
 
     private void CheckWalls()
     {
-        // Check for walls on both sides
         isTouchingLeftWall = Physics2D.OverlapCircle(leftWallCheck.position, wallCheckDistance, wallMask);
         isTouchingRightWall = Physics2D.OverlapCircle(rightWallCheck.position, wallCheckDistance, wallMask);
 
-        // Check if we're touching a wall on the side we're trying to move toward
         if (moveX < 0 && isTouchingLeftWall)
         {
             isTouchingWall = true;
@@ -144,6 +141,10 @@ public class OldInputController : MonoBehaviour
         {
             collectedCoins++;
             Destroy(collision.gameObject);
+        }
+        if(collision.gameObject.layer == LayerMask.NameToLayer("EdgeOfTheWorld"))
+        {
+            Die();
         }
     }
 

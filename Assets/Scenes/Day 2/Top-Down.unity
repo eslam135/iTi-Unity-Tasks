@@ -19868,9 +19868,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1440881077973190646, guid: 9628c49df2913a440aa2d9cdc83dbf39, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5758418558710042786, guid: 9628c49df2913a440aa2d9cdc83dbf39, type: 3}
       propertyPath: m_Name
       value: Character
+      objectReference: {fileID: 0}
+    - target: {fileID: 6117985636944193539, guid: 9628c49df2913a440aa2d9cdc83dbf39, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7447447361469825903, guid: 9628c49df2913a440aa2d9cdc83dbf39, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7529363728637802414, guid: 9628c49df2913a440aa2d9cdc83dbf39, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7696722482664832989, guid: 9628c49df2913a440aa2d9cdc83dbf39, type: 3}
       propertyPath: AreaEffector
